@@ -36,6 +36,11 @@
             "symbolic_name": "ceph_v"
         },
         {
+            "command": "/usr/bin/rhv-log-collector-analyzer --json",
+            "pattern": [],
+            "symbolic_name": "rhv_log_collector_analyzer"
+        },
+        {
             "command": "/usr/bin/find /etc/origin/node /etc/origin/master /etc/pki -type f -exec /usr/bin/openssl x509 -noout -enddate -in '{}' \\; -exec echo 'FileName= {}' \\;",
             "pattern": [],
             "symbolic_name": "certificates_enddate"
